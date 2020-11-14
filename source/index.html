@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="Велосипеды. Горный велосипед. Велосипеды для детей.">
     <meta name="discription" content="Велосипеды для любого возраста">
 
     <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -14,17 +15,14 @@
     <title>Велосипеды</title>
     <link rel="stylesheet" href="css/style.min.css">
 
-
     <script>
         document.createElement( "picture" );
     </script>
-    <script src="js/picturefill.js" async=""></script>
+    <script src="js/picturefill.min.js" async=""></script>
   </head>
 
   <body>
     <header class="page-header">
-      <h1>Начинаю раскачиваться )</h1>
-
       <nav class="page-header__navigation">
         <ul class="page-header__list">
           <li class="page-header__item">
@@ -41,7 +39,129 @@
           </li>
         </ul>
       </nav>
+
+      <div class="page-header__box">
+        <a class="page-header__logo">
+          <img src="img/logo.svg" width="67" height="20" alt="логотип компании">
+        </a>
+        <h1 class="page-header__heading">Мы продаём велосипеды</h1>
+        <p class="page-header__subheading">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+      </div>
+
+      <div class="page-header__form">
+        <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+        <form action="echo/htmlacademy.ru" method="POST" enctype="multipart/form-data">
+          <input type="text" name="name" id="name" placeholder="Введите Ваше Имя">
+          <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона">
+          <input type="submit" name="button" value="Подобрать велосипед мечты">
+        </form>
+      </div>
     </header>
+
+    <main>
+
+      <section class="aboutus">
+        <div class="container">
+          <h2 class="visually-hidden">Преимущества компании Moon в продаже велосипедов</h2>
+
+          <h3 class="aboutus__heading">Несколько фактов о нас</h3>
+          <ul class="aboutus__list">
+            <li class="aboutus__item">
+              <p>Самый широкий выбор велосипедов!</p>
+            </li>
+            <li class="aboutus__item">
+              <p>Доставка велосипедов по всей России!</p>
+            </li>
+            <li class="aboutus__item">
+              <p>Большой выбор крутых аксессуаров!</p>
+            </li>
+            <li class="aboutus__item">
+              <p>Профессиональные консультации!</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="types">
+        <div class="container">
+
+          <h2 class="types__heading">Виды велосипедов</h2>
+
+          <ul class="types__list">
+            <li class="types__item">
+              <picture>
+                <source type="img/webp" media="(min-width:1024px)" srcset="img/road-1-desktop@1x.webp 1x, img/road-1-desktop@2x.webp 2x">
+                <source type="img/webp" media="(min-width:768px)" srcset="img/road-1-tablet@1x.webp 1x, img/road-1-tablet@2x.webp 2x">
+                <source type="img/webp" srcset="img/road-1-mobile@1x.webp 1x, img/road-1-mobile@2x.webp 2x">
+
+                <source media="(min-width:1024px)" srcset="img/road-1-desktop@1x.png 1x, img/road-1-desktop@2x.png 2x">
+                <source media="(min-width:768px)" srcset="img/road-1-tablet@1x.png 1x, img/road-1-tablet@2x.png 2x">
+                <img class="types__image" src="img/road-1-mobile@1x.png" srcset="img/road-1-mobile@2x.png 2x" width="270" height="300" alt="Фотография дорожного велосипеда">
+              </picture>
+              <p class="types__title">Дорожный велосипед</p>
+            </li>
+            <li class="types__item">
+              <picture>
+                <source type="img/webp" media="(min-width:1024px)" srcset="img/mountains-1-desktop@1x.webp 1x, img/mountains-1-desktop@2x.webp 2x">
+                <source type="img/webp" media="(min-width:768px)" srcset="img/mountains-1-tablet@1x.webp 1x, img/mountains-1-tablet@2x.webp 2x">
+                <source type="img/webp" srcset="img/mountains-1-mobile@1x.webp 1x, img/mountains-1-mobile@2x.webp 2x">
+
+                <source media="(min-width:1024px)" srcset="img/mountains-1-desktop@1x.png 1x, img/mountains-1-desktop@2x.png 2x">
+                <source media="(min-width:768px)" srcset="img/mountains-1-tablet@1x.png 1x, img/mountains-1-tablet@2x.png 2x">
+                <img class="types__image" src="img/mountains-1-mobile@1x.png" srcset="img/mountains-1-mobile@2x.png 2x" width="270" height="300" alt="Фотография горного велосипед">
+              </picture>
+              <p class="types__title">Горный велосипед</p>
+            </li>
+            <li class="types__item">
+              <picture>
+                <source type="img/webp" media="(min-width:1024px)" srcset="img/children-1-desktop@1x.webp 1x, img/children-1-desktop@2x.webp 2x">
+                <source type="img/webp" media="(min-width:768px)" srcset="img/children-1-tablet@1x.webp 1x, img/children-1-tablet@2x.webp 2x">
+                <source type="img/webp" srcset="img/children-1-mobile@1x.webp 1x, img/children-1-mobile@2x.webp 2x">
+
+                <source media="(min-width:1024px)" srcset="img/children-1-desktop@1x.png 1x, img/children-1-desktop@2x.png 2x">
+                <source media="(min-width:768px)" srcset="img/children-1-tablet@1x.png 1x, img/children-1-tablet@2x.png 2x">
+                <img class="types__image" src="img/children-1-mobile@1x.png" srcset="img/children-1-mobile@2x.png 2x" width="270" height="300" alt="Фотография детского велосипеда">
+              </picture>
+              <p class="types__title">Детский велосипед</p>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="videodata">
+        <div class="container">
+
+          <h2 class="videodata__heading">Видео про велосипеды</h2>
+          <p class="videodata__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+
+          <picture>
+            <source media="(min-width:1024px)" srcset="img/video-desktop@1x.png">
+            <source media="(min-width:768px)" srcset="img/video-tablet@1x.png">
+            <img class="videodata__video" src="img/video-mobile@1x.png" width="288" height="161" alt="видеоматериал как подобрать велосипед для себя">
+          </picture>
+          <button class="videodata__play" type="button">
+            <img src="img/icon-play.svg" width="65" height="65" alt="кнопка включения видео">
+          </button>
+
+        </div>
+      </section>
+
+      <section class="">
+        <div class="container">
+          <h2 class="visually-hidden">Контакты компании Moon по продаже велосипедов</h2>
+
+          <h3>Как нас найти?</h3>
+          <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+
+          <iframe src="https://yandex.ru/map-widget/v1/-/CCUAF6RJsB" width="560" height="400"></iframe>
+
+          <a class="page-footer__post" aria-label="написать нам" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+          <a class="page-footer__tel" aria-label="позвонить нам" href="tel:+7499784-684-46">+7 (499) -784-684-46</a>
+        </div>
+      </section>
+
+    </main>
 
     <script src="js/main.js"></script>
   </body>
