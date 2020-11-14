@@ -1,3 +1,57 @@
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "blocks/page-header.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+
+  @include font-size;
+
+  color: rgba($black, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 h1 {
-  color: red;
+  font-weight: 300;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 0 12px;
+  }
 }

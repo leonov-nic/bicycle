@@ -1,15 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Велосипеды</title>
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
-  <h1>Первый комит</h1>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="discription" content="Велосипеды для любого возраста">
 
-  <script src="js/popup.min.js"></script>
-</body>
+    <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-300.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
+
+    <title>Велосипеды</title>
+    <link rel="stylesheet" href="css/style.min.css">
+
+
+    <script>
+        document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async=""></script>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <h1>Начинаю раскачиваться )</h1>
+
+      <nav class="page-header__navigation">
+        <ul class="page-header__list">
+          <li class="page-header__item">
+            <a class="page-header__link" href="#">О нас</a>
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__link" href="#">Виды велосипедов</a>
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__link" href="#">Видео про велосипеды</a>
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>

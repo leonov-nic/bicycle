@@ -1,0 +1,16 @@
+@media (min-width: $desktop-width) {
+  .page-header__list,
+  .page-header__item {
+    @include mapa-ul;
+  }
+}
+
+// @media (min-width: $tablet-width) {
+
+
+// }
+
+// @media (min-width: $mobile-width) {
+
+
+// }
