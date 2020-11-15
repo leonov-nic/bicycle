@@ -1,0 +1,144 @@
+@media (min-width: $desktop-width) {
+  .types {
+    width: 100%;
+
+    padding: 150px 10px 140px;
+    margin-top: 150px;
+
+    background-color: $gray-light;
+  }
+
+  .types__heading {
+    display: flex;
+    justify-content: center;
+
+    @include mapa;
+    margin-bottom: 102px;
+
+    font-family: inherit;
+
+    @include font (30px, 30px, 600);
+
+    letter-spacing: -0.005em;
+  }
+
+  .types__list,
+  .types__item {
+    @include mapa-ul;
+  }
+
+  .types__list {
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin: 0 auto;
+
+    width: 78%;
+  }
+
+  .types__item {
+    position: relative;
+
+    flex: 0 1 33.9%;
+
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+
+    &:not(:nth-child(3n+3)) {
+      margin-right: 50px;
+    }
+
+    &::before {
+      position: absolute;
+      left: -60px;
+      top: calc(50% - 105px);
+      z-index: 1;
+
+      content: "";
+
+      width: 180px;
+      height: 180px;
+
+      background-image: url("../img/ellipse.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &::after {
+      position: absolute;
+      left: -23px;
+      top: -23px;
+      z-index: 1;
+
+      content: "";
+
+      width: 47px;
+      height: 47px;
+    }
+
+    &:nth-child(3n+2) {
+      margin-top: 30px;
+
+      &::after {
+        z-index: 2;
+        background-image: url("../img/rectangle.svg");
+        background-repeat: no-repeat;
+      }
+
+      &::before {
+        left: initial;
+        top: initial;
+        right: -23px;
+        bottom: 30px;
+        z-index: 3;
+
+        width: 47px;
+        height: 47px;
+
+        background-image: url("../img/rectangle.svg");
+        background-repeat: no-repeat;
+      }
+    }
+
+    &:nth-child(3n+3) {
+      &::before {
+
+        left: initial;
+        top: -32px;
+        right: -47px;
+        z-index: 3;
+
+        width: 95px;
+        height: 95px;
+      }
+    }
+  }
+
+  .types__image {
+    position: relative;
+    z-index: 2;
+
+    display: block;
+
+    width: 100%;
+    // width: 342px;
+    height: auto;
+  }
+
+  .types__title {
+    font-family: inherit;
+
+    @include font (22px, 34px, 600);
+
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    @include mapa;
+    margin-top: 20px;
+
+    color: $black;
+  }
+}

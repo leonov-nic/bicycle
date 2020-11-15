@@ -2,6 +2,14 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "blocks/page-header.scss";
+@import "blocks/aboutus.scss";
+@import "blocks/types.scss";
+@import "blocks/videodata.scss";
+@import "blocks/contacts.scss";
+
+// * {
+//   outline: 1px solid lime;
+// }
 
 html {
   scroll-behavior: smooth;
@@ -9,10 +17,12 @@ html {
 
 body {
   min-width: 320px;
+  max-width: 1440px;
 
   font-family: "Open Sans", "Arial", sans-serif;
 
-  @include font-size;
+  @include font;
+  margin: 0 auto;
 
   color: rgba($black, 1);
 }

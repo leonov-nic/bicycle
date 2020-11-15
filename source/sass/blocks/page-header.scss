@@ -1,16 +1,230 @@
 @media (min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    // align-content: center;
+
+    width: 100%;
+    min-height: 825px;
+
+    background-image: url("../img/main-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: $gray;
+  }
+
+  @media (min-resolution: $retina-dppx) {
+    .page-header {
+      background-image: url("../img/main-background-desktop@2x.jpg");
+    }
+  }
+
   .page-header__list,
   .page-header__item {
     @include mapa-ul;
+  }
+
+  .page-header__navigation {
+    flex: 0 0 100%;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10px;
+  }
+
+  .page-header__list {
+    display: flex;
+    justify-content: space-between;
+
+    width: 70%;
+
+    padding-left: 21px;
+    padding-right: 21px;
+
+    border-bottom: 1px solid rgba($white, 0.2);
+  }
+
+  .page-header__item {
+    // margin-right: 9%;
+
+    // background-color: lime;
+  }
+
+  .page-header__link {
+    display: block;
+
+    font-family: inherit;
+    font-style: normal;
+
+    @include font (16px, 32px, 300);
+
+    text-align: center;
+    letter-spacing: -0.005em;
+
+    border-bottom: 2px solid rgba($white, 0);
+
+    padding: 8px;
+
+    color: $white;
+
+    opacity: 0.7;
+
+    cursor: pointer;
+
+    transition: 0.6s;
+
+    &:hover {
+      color: $cyan;
+      border-bottom: 2px solid $cyan;
+
+      transition: 0.6s;
+    }
+  }
+
+  .page-header__box {
+    display: flex;
+    flex-wrap: wrap;
+
+    // background-color: lime;
+    @include mapa;
+    margin-right: 160px;
+
+    width: 28%;
+  }
+
+  .page-header__logo {
+    display: block;
+
+    @include mapa;
+    margin-bottom: 30px;
+  }
+
+  .page-header__heading {
+    font-family: inherit;
+
+    @include font (46px, 64px, 700);
+
+    letter-spacing: -0.005em;
+
+    color: $white;
+
+    @include mapa;
+
+    margin-bottom: 24px;
+  }
+
+  .page-header__subheading {
+    font-family: inherit;
+
+    @include font (20px, 32px, 300);
+
+    letter-spacing: -0.005em;
+
+    color: rgba($white, 0.8);
+
+    @include mapa;
+  }
+
+  .page-header__form-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+
+    width: 26%;
+
+    @include mapa;
+
+    input {
+      display: flex;
+
+      width: 100%;
+
+      @include mapa;
+
+      padding: 14px 29px 10px;
+      margin-bottom: 20px;
+
+      border: 1px solid $form-border;
+      border-radius: 6px;
+
+      background-color: $white;
+
+      transition: 0.6s;
+    }
+
+    input:hover {
+      border-color: $cyan;
+      box-shadow: 0 0 0 1px $cyan;
+      border-radius: 6px;
+
+      transition: 0.6s;
+    }
+
+    input:focus {
+      border-color: $black;
+      box-shadow: 0 0 0 2px $cyan;
+      outline: none;
+    }
+
+    input:focus:invalid {
+      border-color: red;
+      box-shadow: 0 0 0 2px red;
+      outline: none;
+    }
+
+    input::placeholder {
+      color: rgba($form, 0.5);
+    }
+
+    input[type="submit"] {
+      justify-content: center;
+
+      font-weight: 600;
+
+      background-color: $cyan;
+      color: $black;
+
+      transition: 0.6s;
+
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: $white;
+
+      transition: 0.6s;
+    }
+  }
+
+  .page-header__form {
+    width: 100%;
+  }
+
+  .page-header__text {
+
+    font-family: inherit;
+
+    @include font (17px, 28px, 600);
+
+    text-align: center;
+    letter-spacing: -0.005em;
+
+    color: $white;
+
+    @include mapa;
+
+    margin-bottom: 34px;
   }
 }
 
 // @media (min-width: $tablet-width) {
 
-
 // }
 
 // @media (min-width: $mobile-width) {
-
-
 // }

@@ -1,0 +1,102 @@
+@media (min-width: $desktop-width) {
+  .aboutus {
+    width: 100%;
+
+    padding: 0 10px;
+    margin-top: 150px;
+  }
+
+  .aboutus__heading {
+    display: flex;
+    justify-content: center;
+
+    @include mapa;
+    margin-bottom: 102px;
+
+    font-family: inherit;
+
+    @include font (30px, 30px, 600);
+
+    letter-spacing: -0.005em;
+  }
+
+  .aboutus__list,
+  .aboutus__item {
+    @include mapa-ul;
+  }
+
+  .aboutus__list {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+
+    width: 82%;
+  }
+
+  .aboutus__item {
+    position: relative;
+
+    width: 21%;
+
+    &::after {
+      position: absolute;
+      left: calc(50% - 10%);
+      top: -55px;
+
+      content: "";
+
+      width: 50px;
+      height: 50px;
+
+      font-family: inherit;
+
+      @include font (28px, 38px, 700);
+
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 38px;
+      text-align: center;
+      letter-spacing: -1.27273px;
+
+      color: $cyan;
+    }
+  }
+
+  .aboutus__item--01 {
+    &::after {
+      content: "01";
+    }
+  }
+
+  .aboutus__item--02 {
+    &::after {
+      content: "02";
+    }
+  }
+
+  .aboutus__item--03 {
+    &::after {
+      content: "03";
+    }
+  }
+
+  .aboutus__item--04 {
+    &::after {
+      content: "04";
+    }
+  }
+
+  .aboutus__text {
+    @include mapa-ul;
+
+    font-family: inherit;
+
+    @include font (22px, 34px, 400);
+
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    color: $black;
+  }
+}
