@@ -1,73 +1,162 @@
-@media (min-width: $desktop-width) {
-  .videodata {
-    position: relative;
+.videodata {
+  position: relative;
 
-    width: 100%;
-    min-height: 804px;
+  width: 100%;
+  min-height: 804px;
 
-    padding: 120px 10px 0;
+  padding: 120px 10px 0;
 
-    background: linear-gradient(to bottom, $black-dark 706px, $white 98px);
+  background: linear-gradient(to bottom, $black-dark 706px, $white 706px, $white 98px);
+}
+
+.videodata h2 {
+  display: flex;
+  justify-content: center;
+
+  @include mapa;
+  margin-bottom: 20px;
+
+  font-family: inherit;
+
+  @include font (30px, 30px, 600);
+
+  letter-spacing: -0.005em;
+
+  color: $white;
+}
+
+.videodata p {
+  display: flex;
+  justify-content: center;
+
+  width: 28%;
+
+  font-family: inherit;
+
+  @include font (16px, 28px, 300);
+
+  text-align: center;
+  letter-spacing: -0.005em;
+
+  @include mapa;
+  margin: 0 auto;
+
+  color: $white;
+
+  opacity: 0.7;
+}
+
+.videodata__video {
+  display: flex;
+  justify-content: center;
+
+  width: 929px;
+  height: auto;
+
+  @include mapa;
+  margin: 0 auto;
+  margin-top: 55px;
+}
+
+.videodata button {
+  border: none;
+}
+
+.videodata svg {
+  display: block;
+
+  position: absolute;
+  left: calc(50% - 32px);
+  bottom: 260px;
+
+  @include mapa;
+  margin: 0 auto;
+
+  border: none;
+  background: none;
+
+  color: $cyan;
+
+  transition: 0.6s;
+
+  &:hover {
+    color: $gray;
+
+    transition: 0.6s;
   }
 
-  .videodata__heading {
-    display: flex;
-    justify-content: center;
+  &:active {
+    color: $black;
 
-    @include mapa;
+    transition: 0.6s;
+  }
+}
+
+@media (max-width: $tablet-width-only) {
+  .videodata {
+    min-height: 498px;
+
+    padding: 70px 10px 0;
+
+    background: linear-gradient(to bottom, $black-dark 413px, $white 413px, $white 858px);
+  }
+
+  .videodata h2 {
     margin-bottom: 20px;
 
-    font-family: inherit;
-
-    @include font (30px, 30px, 600);
-
-    letter-spacing: -0.005em;
-
-    color: $white;
+    @include font (24px, 30px, 600);
   }
 
-  .videodata__text {
-    display: flex;
-    justify-content: center;
-
-    width: 28%;
-
-    font-family: inherit;
-
-    @include font (16px, 28px, 300);
-
-    text-align: center;
-    letter-spacing: -0.005em;
-
-    @include mapa;
-    margin: 0 auto;
-
-    color: $white;
-
-    opacity: 0.7;
+  .videodata p {
+    width: 58%;
   }
 
   .videodata__video {
-    display: flex;
-    justify-content: center;
-
-    width: 929px;
+    width: 503px;
     height: auto;
 
-    @include mapa;
-    margin: 0 auto;
-    margin-top: 55px;
+    margin-top: 40px;
   }
 
-  .videodata__play {
-    position: absolute;
+  .videodata svg {
+    width: 90px;
+    height: auto;
+
+    left: calc(50% - 45px);
+    bottom: 128px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .videodata {
+    min-height: 435px;
+
+    padding: 84px 15px 0;
+
+    background: linear-gradient(to bottom, $black-dark 386px, $white 386px, $white 29px);
+  }
+
+  .videodata h2 {
+    margin-bottom: 22px;
+    letter-spacing: -0.005em;
+  }
+
+  .videodata p {
+    width: 100%;
+  }
+
+  .videodata__video {
+    width: 288px;
+    height: auto;
+
+    margin-top: 54px;
+  }
+
+  .videodata svg {
+    width: 65px;
+    height: auto;
+
     left: calc(50% - 32px);
-    bottom: 230px;
-
-    @include mapa;
-    margin: 0 auto;
-
-    border: none;
-    background: none;
+    bottom: 80px;
   }
 }
