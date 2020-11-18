@@ -49,3 +49,21 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.container {
+  width: 1160px;
+
+  padding: 0 17px;
+}
+
+@media (max-width: $tablet-width-only) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .container {
+    width: auto;
+  }
+}

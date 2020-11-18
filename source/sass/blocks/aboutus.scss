@@ -1,7 +1,10 @@
 .aboutus {
+  display: flex;
+  justify-content: center;
+
   width: 100%;
 
-  padding: 0 10px;
+  margin: 0 auto;
   margin-top: 150px;
 }
 
@@ -31,27 +34,29 @@
 
   margin: 0 auto;
 
-  width: 82%;
+  width: 100%;
+
+  counter-reset: myCounter;
 }
 
 .aboutus__item {
   position: relative;
 
-  width: 22%;
+  width: 21.9%;
 
-  &:not(:first-child):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)) {
-    margin-top: 93px;
-  }
+  margin-bottom: 70px;
+
 
   &::after {
     position: absolute;
     left: calc(50% - 27px);
     top: -55px;
 
-    content: "";
-
     width: 50px;
     height: 50px;
+
+    counter-increment: myCounter;
+    content: "0"counter(myCounter);
 
     font-family: inherit;
 
@@ -64,30 +69,6 @@
     letter-spacing: -1.27273px;
 
     color: $cyan;
-  }
-}
-
-.aboutus__item--01 {
-  &::after {
-    content: "01";
-  }
-}
-
-.aboutus__item--02 {
-  &::after {
-    content: "02";
-  }
-}
-
-.aboutus__item--03 {
-  &::after {
-    content: "03";
-  }
-}
-
-.aboutus__item--04 {
-  &::after {
-    content: "04";
   }
 }
 
@@ -108,7 +89,7 @@
 @media (max-width: $tablet-width-only) {
   .aboutus {
     padding: 0 10px;
-    margin-top: 54px;
+    margin-top: 52px;
   }
 
   .aboutus h3 {
@@ -120,26 +101,30 @@
   .aboutus__list {
     width: 100%;
 
-    padding: 0 96px;
+    padding: 0 80px;
   }
 
   .aboutus__item {
     width: 47%;
 
-    &:not(:first-child):not(:nth-child(2)) {
-      margin-top: 92px;
+    margin-bottom: 90px;
+
+    &:nth-last-child(1),
+    &:nth-last-child(2) {
+      margin-bottom: 0;
     }
   }
 }
 
 @media (max-width: $mobile-width-only) {
   .aboutus {
-    padding: 0 10px;
+    padding: 0;
     margin-top: 54px;
   }
 
   .aboutus h3 {
     margin-bottom: 85px;
+    letter-spacing: -0.5px;
   }
 
   .aboutus__list {
@@ -149,12 +134,13 @@
   }
 
   .aboutus__item {
-    width: 90%;
+    width: 100%;
 
     margin-bottom: 94px;
 
-    &:not(:first-child):not(:nth-child(2)) {
-      margin-top: 0;
+    &:nth-last-child(1),
+    &:nth-last-child(2) {
+      margin-bottom: 94px;
     }
   }
 

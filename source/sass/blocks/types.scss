@@ -1,10 +1,16 @@
 .types {
+  display: flex;
+  justify-content: center;
+
   width: 100%;
 
   padding: 150px 10px 135px;
-  margin-top: 150px;
+  margin-top: 84px;
 
   background-color: $gray-light;
+
+  position: relative;
+  z-index: -1;
 }
 
 .types h2 {
@@ -34,18 +40,67 @@
 
   margin: 0 auto;
 
-  width: 79%;
+  width: 100%;
+}
+
+.types__item--children .types__img {
+  background-image: url("../img/children-1-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  border-radius: 10px;
+
+  padding: 256px 0;
+}
+
+.types__item--mountains .types__img {
+  background-image: url("../img/mountains-1-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
+
+  border-radius: 10px;
+
+  padding: 283px 0;
+}
+
+.types__item--road .types__img {
+  background-image: url("../img/road-1-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
+
+  border-radius: 10px;
+
+  padding: 251px 0;
+}
+
+@media (min-resolution: $retina-dppx) {
+  .types__item--children .types__img {
+    background-image: url("../img/children-1-desktop@2x.png");
+  }
+
+  .types__item--mountains .types__img {
+    background-image: url("../img/mountains-1-desktop@2x.png");
+  }
+
+  .types__item--road .types__img {
+    background-image: url("../img/road-1-desktop@2x.png");
+  }
 }
 
 .types__item {
   position: relative;
+  z-index: 10;
 
-  flex: 0 1 31%;
+  flex: 0 1 30.2%;
   // flex: 0 1 342px;
 
   margin-bottom: 10px;
 
-  border-radius: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 
   &::before {
     position: absolute;
@@ -85,10 +140,8 @@
     }
 
     &::before {
-      left: initial;
-      top: initial;
-      right: -20px;
-      bottom: 34px;
+      left: 317px;
+      top: 535px;
       z-index: 3;
 
       width: 47px;
@@ -103,9 +156,8 @@
     margin-top: -10px;
 
     &::before {
-      left: initial;
+      left: 270px;
       top: -33px;
-      right: -38px;
       z-index: 3;
 
       width: 95px;
@@ -121,7 +173,7 @@
   display: block;
 
   width: 100%;
-  // width: 342px;
+  // width: 343px;
   height: auto;
 }
 
@@ -134,7 +186,7 @@
   letter-spacing: -0.5px;
 
   @include mapa;
-  margin-top: 10px;
+  margin-top: 22px;
 
   color: $black;
 }
@@ -157,6 +209,40 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+
+    padding: 0 60px;
+  }
+
+  .types__item--children .types__img {
+    background-image: url("../img/children-1-tablet@1x.png");
+
+    padding: 150px 0;
+  }
+
+  .types__item--mountains .types__img {
+    background-image: url("../img/mountains-1-tablet@1x.png");
+
+    padding: 150px 0;
+  }
+
+  .types__item--road .types__img {
+    background-image: url("../img/road-1-tablet@1x.png");
+
+    padding: 150px 0;
+  }
+
+  @media (min-resolution: $retina-dppx) {
+    .types__item--children .types__img {
+      background-image: url("../img/children-1-tablet@2x.png");
+    }
+
+    .types__item--mountains .types__img {
+      background-image: url("../img/mountains-1-tablet@2x.png");
+    }
+
+    .types__item--road .types__img {
+      background-image: url("../img/road-1-tablet@2x.png");
+    }
   }
 
   .types__item {
@@ -224,6 +310,10 @@
     width: 100%;
     height: auto;
   }
+
+  .types p {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -239,10 +329,16 @@
 
   .types__list {
     justify-content: center;
+
+    padding: 0;
   }
 
   .types__item {
-    margin-bottom: 40px;
+    margin-bottom: 41px;
+
+    &:not(:last-child) {
+      margin-right: 0;
+    }
 
     &::before {
       position: absolute;
@@ -254,5 +350,9 @@
         right: -10px;
       }
     }
+  }
+
+  .types p {
+    margin-top: 20px;
   }
 }
