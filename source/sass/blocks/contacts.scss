@@ -72,12 +72,31 @@
   &:nth-child(2n + 1) {
     margin-right: 70px;
   }
+
+  &:hover a {
+    color: $cyan;
+    transition: 0.6s;
+  }
+
+  &:hover .contacts__letter {
+    color: $gray;
+
+    transition: 0.6s;
+  }
+
+  &:hover .contacts__phone {
+    stroke: $gray;
+
+    transition: 0.6s;
+  }
 }
 
 .contacts__letter {
   color: $cyan;
 
   margin-right: 10px;
+
+  transition: 0.6s;
 }
 
 .contacts__phone {
@@ -85,6 +104,8 @@
   color: $white;
 
   margin-right: 12px;
+
+  transition: 0.6s;
 }
 
 .contacts a {
@@ -102,11 +123,6 @@
   color: rgba($black, 0.5);
 
   transition: 0.6s;
-
-  &:hover {
-    color: $cyan;
-    transition: 0.6s;
-  }
 
   &::before {
     position: absolute;

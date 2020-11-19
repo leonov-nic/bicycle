@@ -17,7 +17,6 @@ html {
 
 body {
   min-width: 320px;
-  max-width: 1440px;
 
   font-family: "Open Sans", "Arial", sans-serif;
 
@@ -54,6 +53,8 @@ a {
   width: 1160px;
 
   padding: 0 17px;
+
+
 }
 
 @media (max-width: $tablet-width-only) {

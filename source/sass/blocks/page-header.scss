@@ -3,6 +3,7 @@
   justify-content: center;
 
   width: 100%;
+  max-width: 100%;
   min-height: 825px;
 
   background-image: url("../img/main-background-desktop@1x.jpg");
@@ -33,12 +34,11 @@
 }
 
 .page-header__navigation {
-  flex: 0 0 100%;
+  width: 100%;
 
   display: flex;
   justify-content: center;
 
-  // margin-right: 83px;
   margin-bottom: 31px;
   padding-left: 120px;
   padding-right: 120px;
@@ -293,8 +293,6 @@
     display: none;
 
     position: relative;
-
-    flex: 0 0 100%;
 
     justify-content: center;
 
