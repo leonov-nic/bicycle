@@ -7,7 +7,7 @@
 
   pageHeader.classList.remove('page-header--nojs');
 
-  function sendData(header, nav) {
+  function openCloseMenu(header, nav) {
     if (header.classList.contains('page-header--closed')) {
       header.classList.remove('page-header--closed');
       header.classList.add('page-header--opened');
@@ -17,14 +17,10 @@
       header.classList.add('page-header--closed');
       header.classList.remove('page-header--opened');
       nav.classList.remove('page-header__menu-show');
-      }
+    }
   }
 
   headerToggle.addEventListener('click', function () {
-    sendData(pageHeader, navigation);
+    openCloseMenu(pageHeader, navigation);
   });
-  // headerToggle.addEventListener('click', sendData(pageHeader, navigation));
-
-
-
 })();

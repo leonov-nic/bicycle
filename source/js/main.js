@@ -7,7 +7,7 @@
 
   pageHeader.classList.remove('page-header--nojs');
 
-  function sendData(header, nav) {
+  function openCloseMenu(header, nav) {
     if (header.classList.contains('page-header--closed')) {
       header.classList.remove('page-header--closed');
       header.classList.add('page-header--opened');
@@ -21,6 +21,6 @@
   }
 
   headerToggle.addEventListener('click', function () {
-    sendData(pageHeader, navigation);
+    openCloseMenu(pageHeader, navigation);
   });
 })();

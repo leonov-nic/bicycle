@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="Велосипеды. Горный велосипед. Велосипеды для детей.">
-    <meta name="discription" content="Велосипеды для любого возраста">
+    <meta name="Description" content="Товар: Велосипеды, Виды велосипедов: для любого возраста, Цены: оптимальные цены за качественные велосипеды">
 
     <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/open-sans-v18-latin_cyrillic-300.woff2" as="font" type="font/woff2" crossorigin>
@@ -54,8 +54,10 @@
         </nav>
 
         <div class="page-header__box">
-          <a class="page-header__logo">
-            <img src="img/logo.svg" width="67" height="20" alt="логотип компании">
+          <a class="page-header__logo" aria-label="логотип компании Moon">
+            <svg role="img" aria-label="иконка телефона" width="68" height="21">
+              <use xlink:href="#icon-logo"></use>
+            </svg>
           </a>
           <h1 class="page-header__heading">Мы продаем велосипеды</h1>
           <p class="page-header__subheading">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
@@ -173,12 +175,6 @@
 
     <svg style="display: none;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
-      <symbol id="icon-arrow-right" viewBox="0 0 8 12">
-        <g clip-path="url(#clip0)">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.4L4.6 6L0 10.6L1.4 12L7.4 6L1.4 0L0 1.4Z" fill="#2C2E3F" fill-opacity="0.5"/>
-        </g>
-      </symbol>
-
       <symbol id="icon-close" viewBox="0 0 24 25" fill="CurrentColor">
         <path d="M1 23.7213L23 1M23 23.7213L1 1" stroke="#141517" stroke-opacity="0.2" stroke-linecap="round" stroke-linejoin="round"/>
       </symbol>
@@ -199,9 +195,19 @@
         <path fill-rule="evenodd" clip-rule="evenodd" d="M32.5 65C50.4493 65 65 50.4493 65 32.5C65 14.5507 50.4493 0 32.5 0C14.5507 0 0 14.5507 0 32.5C0 50.4493 14.5507 65 32.5 65Z"/>
         <path id="icon-play__triangle" fill-rule="evenodd" clip-rule="evenodd" d="M28.6001 23.3999L41.6001 32.4999L28.6001 41.5999V23.3999Z" fill="#000000"/>
       </symbol>
+
+      <symbol id="icon-logo" viewBox="0 0 68 21" fill="CurrentColor" stroke="CurrentColor">
+        <path d="M13.3636 0V20.0455H10.0705V5.82273L8.97273 7.20682L6.825 9.975L6.72954 10.0705L6.58636 9.975L4.43864 7.20682L3.34091 5.775V20.0455H0V0H3.34091L6.72954 4.29545L10.0705 0H13.3636Z"/>
+        <path d="M8.30444 10.0705L8.20898 9.97501L8.30444 10.0705Z"/>
+        <path d="M8.44787 9.97501L8.35241 10.0705H8.30469L8.44787 9.97501Z"/>
+        <path d="M38.209 5.61453L29.082 12.316L31.1952 15.194L40.3222 8.49252L38.209 5.61453Z"/>
+        <path d="M26.6672 3C22.8032 3 19.624 6.13028 19.624 10.0431C19.624 13.9071 22.7543 17.0863 26.6672 17.0863C30.5311 17.0863 33.7103 13.956 33.7103 10.0431C33.7103 6.17919 30.5311 3 26.6672 3ZM26.6672 13.2712C24.8575 13.2712 23.4391 11.8039 23.4391 10.0431C23.4391 8.23344 24.9064 6.81503 26.6672 6.81503C28.4279 6.81503 29.8953 8.28235 29.8953 10.0431C29.8953 11.8039 28.4279 13.2712 26.6672 13.2712Z"/>
+        <path d="M43.6393 3C39.7754 3 36.5962 6.13028 36.5962 10.0431C36.5962 13.9071 39.7265 17.0863 43.6393 17.0863C47.5033 17.0863 50.6825 13.956 50.6825 10.0431C50.6336 6.17919 47.5033 3 43.6393 3ZM43.6393 13.2712C41.8296 13.2712 40.4112 11.8039 40.4112 10.0431C40.4112 8.23344 41.8785 6.81503 43.6393 6.81503C45.4001 6.81503 46.8674 8.28235 46.8674 10.0431C46.8674 11.8039 45.4001 13.2712 43.6393 13.2712Z"/>
+        <path d="M67.5977 0.238647V20.2841H64.2568V9.87956L61.4409 7.20683L59.3409 5.15456V20.2841H56V0.238647H59.2932H59.3409L63.2545 4.0091L64.2568 4.96365V0.238647H67.5977Z"/>
+        <rect x="37" y="3" width="6" height="4"/>
+      </symbol>
     </svg>
 
     <script src="js/main.js"></script>
-
   </body>
 </html>

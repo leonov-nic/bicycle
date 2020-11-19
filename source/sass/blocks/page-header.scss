@@ -110,6 +110,16 @@
 
   @include mapa;
   margin-bottom: 20px;
+
+  color: $cyan;
+
+  transition: 0.6s;
+
+  &:hover {
+    color: $white;
+
+    transition: 0.6s;
+  }
 }
 
 .page-header__box h1 {
