@@ -7,18 +7,20 @@
 
   pageHeader.classList.remove('page-header--nojs');
 
-  headerToggle.addEventListener('click', function () {
-    if (pageHeader.classList.contains('page-header--closed')) {
-      pageHeader.classList.remove('page-header--closed');
-      pageHeader.classList.add('page-header--opened');
-      navigation.classList.add('page-header__menu-show');
-      // navigation.classList.remove('page-header__menu-close');
+  function sendData(header, nav) {
+    if (header.classList.contains('page-header--closed')) {
+      header.classList.remove('page-header--closed');
+      header.classList.add('page-header--opened');
+      nav.classList.add('page-header__menu-show');
 
     } else {
-      pageHeader.classList.add('page-header--closed');
-      pageHeader.classList.remove('page-header--opened');
-      navigation.classList.remove('page-header__menu-show');
-      // navigation.classList.add('page-header__menu-close');
+      header.classList.add('page-header--closed');
+      header.classList.remove('page-header--opened');
+      nav.classList.remove('page-header__menu-show');
     }
+  }
+
+  headerToggle.addEventListener('click', function () {
+    sendData(pageHeader, navigation);
   });
 })();

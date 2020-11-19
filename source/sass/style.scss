@@ -7,10 +7,6 @@
 @import "blocks/videodata.scss";
 @import "blocks/contacts.scss";
 
-// * {
-//   outline: 1px solid lime;
-// }
-
 html {
   scroll-behavior: smooth;
 }
@@ -53,8 +49,6 @@ a {
   width: 1160px;
 
   padding: 0 17px;
-
-
 }
 
 @media (max-width: $tablet-width-only) {
