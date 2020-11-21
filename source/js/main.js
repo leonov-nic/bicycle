@@ -11,16 +11,21 @@
     if (header.classList.contains('page-header--closed')) {
       header.classList.remove('page-header--closed');
       header.classList.add('page-header--opened');
+      nav.classList.remove('page-header__menu-close');
       nav.classList.add('page-header__menu-show');
 
     } else {
       header.classList.add('page-header--closed');
       header.classList.remove('page-header--opened');
+      nav.classList.add('page-header__menu-close');
       nav.classList.remove('page-header__menu-show');
     }
   }
 
-  headerToggle.addEventListener('click', function () {
+  function onOpenMenu() {
     openCloseMenu(pageHeader, navigation);
-  });
+  }
+
+  headerToggle.addEventListener('click', onOpenMenu);
+
 })();

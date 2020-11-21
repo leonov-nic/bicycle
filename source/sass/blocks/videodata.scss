@@ -1,47 +1,32 @@
 .videodata {
-  position: relative;
-
-  width: 100%;
-  max-width: 100%;
-  min-height: 804px;
+  // min-height: 804px;
 
   margin: 0 auto;
-  padding: 122px 10px 0;
+  padding: 122px 0;
+  text-align: center;
 
   background: linear-gradient(to bottom, $black-dark 706px, $white 706px, $white 98px);
 }
 
 .videodata h2 {
-  display: flex;
-  justify-content: center;
-
-  @include mapa;
-  margin-bottom: 20px;
-
-  font-family: inherit;
-
   @include font (30px, 30px, 600);
 
   letter-spacing: -0.005em;
+
+  margin: 0 auto;
 
   color: $white;
 }
 
 .videodata p {
-  display: flex;
-  justify-content: center;
-
   width: 30%;
-
-  font-family: inherit;
 
   @include font (16px, 28px, 300);
 
-  text-align: center;
   letter-spacing: -0.005em;
 
-  @include mapa;
   margin: 0 auto;
+  padding-top: 20px;
 
   color: $white;
 
@@ -49,33 +34,33 @@
 }
 
 .videodata__video {
-  display: flex;
-  justify-content: center;
+  position: relative;
 
-  width: 929px;
-  height: auto;
-
-  @include mapa;
+  max-width: 929px;
   margin: 0 auto;
-  margin-top: 55px;
+
+  padding-top: 55px;
+}
+
+.videodata img {
+  display: block;
+
+  width: 100%;
+  height: auto;
 }
 
 .videodata button {
   position: absolute;
-  left: calc(50% - 37px);
-  top: 514px;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, 0);
 
   border: none;
   background: none;
 }
 
 .videodata svg {
-  @include mapa;
-  margin: 0 auto;
-
-  border: none;
-  background: none;
-
   color: $cyan;
 
   transition: 0.6s;
@@ -95,16 +80,12 @@
 
 @media (max-width: $tablet-width-only) {
   .videodata {
-    min-height: 498px;
-
-    padding: 70px 10px 0;
+    padding: 70px 0 50px;
 
     background: linear-gradient(to bottom, $black-dark 413px, $white 413px, $white 858px);
   }
 
   .videodata h2 {
-    margin-bottom: 20px;
-
     @include font (24px, 30px, 600);
   }
 
@@ -113,15 +94,13 @@
   }
 
   .videodata__video {
-    width: 503px;
-    height: auto;
+    max-width: 503px;
 
-    margin-top: 40px;
+    padding-top: 40px;
   }
 
   .videodata button {
-    left: calc(50% - 50px);
-    top: 310px;
+    transform: translate(-50%, -27%);
   }
 
   .videodata svg {
@@ -132,32 +111,27 @@
 
 @media (max-width: $mobile-width-only) {
   .videodata {
-    min-height: 435px;
-
-    padding: 84px 15px 0;
+    padding: 88px 0 10px;
 
     background: linear-gradient(to bottom, $black-dark 386px, $white 386px, $white 29px);
   }
 
-  .videodata h2 {
-    margin-bottom: 20px;
-    letter-spacing: -0.005em;
-  }
-
   .videodata p {
-    width: 290px;
+    width: 100%;
+
+    padding-top: 20px;
   }
 
   .videodata__video {
+    max-width: 288px;
     width: 288px;
-    height: auto;
+    margin: 0 auto;
 
-    margin-top: 53px;
+    padding-top: 53px;
   }
 
   .videodata button {
-    left: calc(50% - 40px);
-    top: 320px;
+    transform: translate(-50%, 0);
   }
 
   .videodata svg {

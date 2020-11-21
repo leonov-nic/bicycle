@@ -84,19 +84,19 @@
 
           <h2 class="visually-hidden">Преимущества компании Moon по продаже велосипедов</h2>
 
-          <h3 class="aboutus__heading">Несколько фактов о нас</h3>
+          <h3>Несколько фактов о нас</h3>
           <ul class="aboutus__list">
             <li class="aboutus__item">
-              <p class="aboutus__text">Самый широкий выбор велосипедов!</p>
+              <p>Самый широкий выбор велосипедов!</p>
             </li>
             <li class="aboutus__item">
-              <p class="aboutus__text">Доставка велосипедов по всей России!</p>
+              <p>Доставка велосипедов по всей России!</p>
             </li>
             <li class="aboutus__item">
-              <p class="aboutus__text">Большой выбор крутых аксессуаров!</p>
+              <p>Большой выбор крутых аксессуаров!</p>
             </li>
             <li class="aboutus__item">
-              <p class="aboutus__text">Профессиональные консультации!</p>
+              <p>Профессиональные консультации!</p>
             </li>
           </ul>
 
@@ -128,46 +128,57 @@
       </section>
 
       <section class="videodata" id="videodata">
+        <div class="container">
 
-        <h2 class="videodata__heading">Видео про велосипеды</h2>
-        <p class="videodata__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+          <h2>Видео про велосипеды</h2>
+          <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
 
-        <picture>
-          <source media="(min-width:1024px)" srcset="img/video-desktop@1x.png">
-          <source media="(min-width:768px)" srcset="img/video-tablet@1x.png">
-          <img class="videodata__video" src="img/video-mobile@1x.png" width="288" height="161" alt="видеоматериал как подобрать велосипед для себя">
-        </picture>
-        <button class="videodata__play" type="button">
-          <svg role="img" aria-label="Кнопка вкючения видео" class="videodata__close-svg" width="65" height="65">
-            <use xlink:href="#icon-play"></use>
-          </svg>
-        </button>
+          <div class="videodata__video">
+            <picture>
+              <source type="img/webp" media="(min-width:1024px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="img/webp" media="(min-width:768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="img/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+              <!-- 1х: 929px; 2x: 1858px -->
+              <img src="img/video-desktop@1x.png" srcset="img/video-desktop@1x.png 2x" width="929" height="522" alt="видеоматериал, как подобрать велосипед для себя">
+            </picture>
 
+            <button class="videodata__play" type="button">
+              <svg role="img" aria-label="Кнопка вкючения видео" class="videodata__close-svg" width="65" height="65">
+                <use xlink:href="#icon-play"></use>
+              </svg>
+            </button>
+          </div>
+
+        </div>
       </section>
 
       <section class="contacts" id="contacts">
+        <div class="container">
 
-        <h2 class="visually-hidden">Контакты компании Moon по продаже велосипедов</h2>
+          <h2 class="visually-hidden">Контакты компании Moon по продаже велосипедов</h2>
 
-        <h3 class="contacts__heading">Как нас найти?</h3>
-        <p class="contacts__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+          <h3>Как нас найти?</h3>
+          <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+        </div>
 
-        <iframe class="contacts__card" src="https://yandex.ru/map-widget/v1/-/CCUAF6RJsB" width="320" height="250"></iframe>
+        <iframe class="contacts__card" src="https://yandex.ru/map-widget/v1/-/CCUAF6RJsB" width="957" height="530"></iframe>
 
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <svg role="img" aria-label="иконка письма" class="contacts__letter" width="26" height="20">
-              <use xlink:href="#icon-letter"></use>
-            </svg>
-            <a class="contacts__post" aria-label="написать нам" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-          </li>
-          <li class="contacts__item">
-            <svg role="img" aria-label="иконка телефона" class="contacts__phone" width="22" height="24">
-              <use xlink:href="#icon-phone"></use>
-            </svg>
-            <a class="contacts__tel" aria-label="позвонить нам" href="tel:+7499784-684-46">+7 (499) -784-684-46</a>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <svg role="img" aria-label="иконка письма" class="contacts__letter" width="26" height="20">
+                <use xlink:href="#icon-letter"></use>
+              </svg>
+              <a class="contacts__post" aria-label="написать нам" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+            </li>
+            <li class="contacts__item">
+              <svg role="img" aria-label="иконка телефона" class="contacts__phone" width="22" height="24">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+              <a class="contacts__tel" aria-label="позвонить нам" href="tel:+7499784-684-46">+7 (499) -784-684-46</a>
+            </li>
+          </ul>
+        </div>
 
       </section>
 

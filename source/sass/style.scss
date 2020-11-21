@@ -1,14 +1,25 @@
 @import "fonts.scss";
 @import "variables.scss";
 @import "mixins.scss";
+@import "normalize.scss";
 @import "blocks/page-header.scss";
 @import "blocks/aboutus.scss";
 @import "blocks/types.scss";
 @import "blocks/videodata.scss";
 @import "blocks/contacts.scss";
 
+// * {
+//   outline: 1px solid red;
+// }
+
 html {
+  box-sizing: border-box;
+
   scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
 }
 
 body {
@@ -22,8 +33,10 @@ body {
   color: rgba($black, 1);
 }
 
-* {
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 a {
@@ -46,19 +59,20 @@ a {
 }
 
 .container {
-  width: 1160px;
+  max-width: 1160px;
 
   padding: 0 17px;
-}
+  margin: 0 auto;
 
-@media (max-width: $tablet-width-only) {
-  .container {
-    width: 100%;
+  // background-color: red;
+
+  @media (max-width: $tablet-width-only) {
+   width: 768px;
   }
-}
 
-@media (max-width: $mobile-width-only) {
-  .container {
-    width: auto;
+  @media (max-width: $mobile-width-only) {
+    max-width: 600px;
+    width: 320px;
+    padding: 0 15px;
   }
 }
