@@ -1,34 +1,36 @@
 .videodata {
   // min-height: 804px;
-
   margin: 0 auto;
   padding: 122px 0;
+
   text-align: center;
 
-  background: linear-gradient(to bottom, $black-dark 706px, $white 706px, $white 98px);
+  background: linear-gradient(
+  to bottom,
+  $black-dark 706px,
+  $white 706px,
+  $white 98px
+  );
 }
 
 .videodata h2 {
-  @include font (30px, 30px, 600);
-
-  letter-spacing: -0.005em;
+  @include font(30px, 30px, 600);
 
   margin: 0 auto;
 
   color: $white;
+  letter-spacing: -0.005em;
 }
 
 .videodata p {
+  @include font(16px, 28px, 300);
+
   width: 30%;
-
-  @include font (16px, 28px, 300);
-
-  letter-spacing: -0.005em;
-
   margin: 0 auto;
   padding-top: 20px;
 
   color: $white;
+  letter-spacing: -0.005em;
 
   opacity: 0.7;
 }
@@ -36,28 +38,26 @@
 .videodata__video {
   position: relative;
 
-  max-width: 929px;
+  max-width: 942px;
   margin: 0 auto;
-
   padding-top: 55px;
+  padding-left: 15px;
 }
 
 .videodata img {
   display: block;
-
   width: 100%;
   height: auto;
 }
 
 .videodata button {
   position: absolute;
-  left: 50%;
   top: 50%;
+  left: 50%;
 
-  transform: translate(-50%, 0);
-
-  border: none;
   background: none;
+  border: none;
+  transform: translate(-50%, 0);
 }
 
 .videodata svg {
@@ -82,11 +82,16 @@
   .videodata {
     padding: 70px 0 50px;
 
-    background: linear-gradient(to bottom, $black-dark 413px, $white 413px, $white 858px);
+    background: linear-gradient(
+    to bottom,
+    $black-dark 413px,
+    $white 413px,
+    $white 858px
+    );
   }
 
   .videodata h2 {
-    @include font (24px, 30px, 600);
+    @include font(24px, 30px, 600);
   }
 
   .videodata p {
@@ -95,8 +100,8 @@
 
   .videodata__video {
     max-width: 503px;
-
     padding-top: 40px;
+    padding-left: 0;
   }
 
   .videodata button {
@@ -113,25 +118,28 @@
   .videodata {
     padding: 88px 0 10px;
 
-    background: linear-gradient(to bottom, $black-dark 386px, $white 386px, $white 29px);
+    background: linear-gradient(
+    to bottom,
+    $black-dark 386px,
+    $white 386px,
+    $white 29px
+    );
   }
 
   .videodata p {
     width: 100%;
-
     padding-top: 20px;
   }
 
   .videodata__video {
-    max-width: 288px;
     width: 288px;
+    max-width: 288px;
     margin: 0 auto;
-
     padding-top: 53px;
   }
 
   .videodata button {
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -15%);
   }
 
   .videodata svg {

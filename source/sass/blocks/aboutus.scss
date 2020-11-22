@@ -1,129 +1,118 @@
 .aboutus {
-  margin: 0 auto;
-  padding-top: 150px;
+  padding: 128px 0 153px 17px;
 }
 
-.aboutus h3 {
-  margin: 0;
-  padding-bottom: 102px;
+.aboutus h2 {
+  @include font(30px, 30px, 600);
 
   text-align: center;
   letter-spacing: -0.005em;
-
-  @include font (30px, 30px, 600);
 }
 
 .aboutus__list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-
-  margin: 0 auto;
+  justify-content: space-between;
+  margin: 0;
   padding: 0;
 
+  list-style: none;
+
   counter-reset: myCounter;
+
+  @media (max-width: 1200px) {
+    width: 100%;
+    padding: 0 80px;
+  }
 }
 
 .aboutus__item {
   position: relative;
 
-  width: 21.9%;
+  display: flex;
+  justify-content: center;
+  max-width: 245px;
+  padding-top: 65px;
 
-  padding-bottom: 70px;
-
-
-  &::after {
-    position: absolute;
-    left: calc(50% - 27px);
-    top: -55px;
-
-    width: 50px;
-    height: 50px;
-
-    counter-increment: myCounter;
-    content: "0"counter(myCounter);
-
-    @include font (28px, 38px, 700);
-
-    text-align: center;
-    letter-spacing: -1.27273px;
-
-    color: $cyan;
-  }
-}
-
-.aboutus p {
-  margin: 0;
-
-  @include font (22px, 34px, 400);
-
-  text-align: center;
-  letter-spacing: -0.5px;
-
-  color: $black;
-}
-
-
-@media (max-width: $tablet-width-only) {
-  .aboutus {
-    padding: 0 10px;
-    padding-top: 52px;
-  }
-
-  .aboutus h3 {
-    padding-bottom: 86px;
-
-    @include font (24px, 41px, 600);
-  }
-
-  .aboutus__list {
-    width: 100%;
-
-    padding: 0 80px;
-  }
-
-  .aboutus__item {
-    width: 47%;
-
-    padding-bottom: 90px;
+  @media (max-width: 1200px) {
+    max-width: 250px;
+    padding-bottom: 30px;
 
     &:nth-last-child(1),
     &:nth-last-child(2) {
       padding-bottom: 0;
     }
   }
+
+  &::after {
+    @include font(28px, 38px, 700);
+
+    content: "0" counter(myCounter);
+    position: absolute;
+    top: 10px;
+
+    text-align: center;
+    color: $cyan;
+    letter-spacing: -1.27273px;
+
+    counter-increment: myCounter;
+  }
+}
+
+.aboutus p {
+  @include font(22px, 34px, 400);
+
+  margin: 0;
+
+  text-align: center;
+  color: $black;
+  letter-spacing: -0.5px;
+}
+
+@media (max-width: 1200px) {
+  .aboutus {
+    padding: 0 10px;
+    padding-top: 32px;
+  }
+
+  .aboutus h2 {
+    @include font(24px, 41px, 600);
+
+    padding-bottom: 0;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
   .aboutus {
     padding: 0;
-    padding-top: 54px;
+    padding-top: 34px;
+    padding-bottom: 35px;
   }
 
-  .aboutus h3 {
-    padding-bottom: 85px;
+  .aboutus h2 {
+    padding-bottom: 0;
 
     letter-spacing: -0.5px;
   }
 
   .aboutus__list {
     justify-content: center;
-
     padding: 0;
   }
 
   .aboutus__item {
     width: 100%;
+    max-width: 288px;
 
-    padding-bottom: 93px;
+    padding-bottom: 28px;
 
     &:nth-last-child(1),
     &:nth-last-child(2) {
-      padding-bottom: 94px;
+      padding-bottom: 28px;
     }
   }
 
   .aboutus p {
-    @include font (18px, 32px, 400);
+    @include font(18px, 32px, 400);
   }
 }

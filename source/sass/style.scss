@@ -2,77 +2,9 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "normalize.scss";
+@import "base.scss";
 @import "blocks/page-header.scss";
 @import "blocks/aboutus.scss";
 @import "blocks/types.scss";
 @import "blocks/videodata.scss";
 @import "blocks/contacts.scss";
-
-// * {
-//   outline: 1px solid red;
-// }
-
-html {
-  box-sizing: border-box;
-
-  scroll-behavior: smooth;
-}
-
-ul {
-  list-style-type: none;
-}
-
-body {
-  min-width: 320px;
-
-  font-family: "Open Sans", "Arial", sans-serif;
-
-  @include font;
-  margin: 0 auto;
-
-  color: rgba($black, 1);
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-a {
-  text-decoration: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.container {
-  max-width: 1160px;
-
-  padding: 0 17px;
-  margin: 0 auto;
-
-  // background-color: red;
-
-  @media (max-width: $tablet-width-only) {
-   width: 768px;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    max-width: 600px;
-    width: 320px;
-    padding: 0 15px;
-  }
-}
