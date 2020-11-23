@@ -1,5 +1,16 @@
 .aboutus {
-  padding: 128px 0 153px 17px;
+  padding: 8.7% 8px 10.7% 8px;
+
+  @media (max-width: $tablet-width-only) {
+    padding-top: 4.5%;
+    padding-bottom: 5.5%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0;
+    padding-top: 32px;
+    padding-bottom: 56px;
+  }
 }
 
 .aboutus h2 {
@@ -7,6 +18,16 @@
 
   text-align: center;
   letter-spacing: -0.005em;
+
+  @media (max-width: 1200px) {
+    @include font(24px, 41px, 600);
+
+    padding-bottom: 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    letter-spacing: -0.1px;
+  }
 }
 
 .aboutus__list {
@@ -21,8 +42,13 @@
   counter-reset: myCounter;
 
   @media (max-width: 1200px) {
-    width: 100%;
-    padding: 0 80px;
+    max-width: 545px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    justify-content: center;
+    padding: 0;
   }
 }
 
@@ -32,30 +58,37 @@
   display: flex;
   justify-content: center;
   max-width: 245px;
-  padding-top: 65px;
+  padding-top: 6.7%;
 
   @media (max-width: 1200px) {
     max-width: 250px;
-    padding-bottom: 30px;
-
-    &:nth-last-child(1),
-    &:nth-last-child(2) {
-      padding-bottom: 0;
-    }
+    margin-bottom: 28px;
+    padding-top: 12%;
   }
 
-  &::after {
-    @include font(28px, 38px, 700);
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    max-width: 288px;
+    padding-top: 20.5%;
+    padding-bottom: 0;
+  }
+
+  &::before {
+    @include font(28px, 34px, 700);
 
     content: "0" counter(myCounter);
     position: absolute;
-    top: 10px;
+    top: 17%;
 
     text-align: center;
     color: $cyan;
     letter-spacing: -1.27273px;
 
     counter-increment: myCounter;
+
+    @media (max-width: 1200px) {
+      top: 9%;
+    }
   }
 }
 
@@ -67,52 +100,8 @@
   text-align: center;
   color: $black;
   letter-spacing: -0.5px;
-}
 
-@media (max-width: 1200px) {
-  .aboutus {
-    padding: 0 10px;
-    padding-top: 32px;
-  }
-
-  .aboutus h2 {
-    @include font(24px, 41px, 600);
-
-    padding-bottom: 0;
-  }
-}
-
-@media (max-width: $mobile-width-only) {
-  .aboutus {
-    padding: 0;
-    padding-top: 34px;
-    padding-bottom: 35px;
-  }
-
-  .aboutus h2 {
-    padding-bottom: 0;
-
-    letter-spacing: -0.5px;
-  }
-
-  .aboutus__list {
-    justify-content: center;
-    padding: 0;
-  }
-
-  .aboutus__item {
-    width: 100%;
-    max-width: 288px;
-
-    padding-bottom: 28px;
-
-    &:nth-last-child(1),
-    &:nth-last-child(2) {
-      padding-bottom: 28px;
-    }
-  }
-
-  .aboutus p {
+  @media (max-width: $mobile-width-only) {
     @include font(18px, 32px, 400);
   }
 }
