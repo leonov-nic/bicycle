@@ -105,6 +105,8 @@
   border: none;
   transform: translate(-50%, 0);
 
+  cursor: pointer;
+
   @media (max-width: $tablet-width-only) {
     transform: translate(-50%, -27%);
   }

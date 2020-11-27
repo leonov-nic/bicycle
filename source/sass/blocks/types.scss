@@ -1,3 +1,8 @@
+.types .container {
+  padding: 0;
+  max-width: 1186px;
+}
+
 .types {
   position: relative;
 
@@ -11,7 +16,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    padding-top: 15.8%;
+    padding-top: 13%;
   }
 }
 
@@ -34,9 +39,12 @@
 
 .types__list {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  max-width: 1126px;
-  margin: 0 -25px;
+  max-width: 1176px;
+  // justify-content: center;
+  margin: 0 auto;
+  // margin: 0 -25px;
   padding: 0;
 
   @media (max-width: 1150px) {
@@ -57,6 +65,14 @@
   max-width: 342px;
   margin: 0 25px 25px;
   padding: 0;
+
+  &:nth-child(3n + 3) {
+    margin-top: -10px;
+
+    @media (max-width: $tablet-width-only) {
+      margin-top: auto;
+    }
+  }
 
   @media (max-width: $tablet-width-only) {
     max-width: 270px;
@@ -151,7 +167,7 @@
 
   &:nth-child(3n + 3) {
     &::before {
-      top: -41px;
+      top: -31px;
       right: -10.4%;
       left: auto;
       z-index: 3;
@@ -180,7 +196,7 @@
   width: 342px;
   height: 510px;
 
-  @media (max-width: 1150px) {
+  @media (max-width: $tablet-width-only) {
     width: 270px;
     height: 300px;
     max-height: 300px;
@@ -223,6 +239,14 @@
 
   .types__item--road .types__img {
     background-image: url("../img/road-1-desktop@2x.png");
+  }
+}
+
+.types__item:nth-child(3n + 3) p {
+  margin-top: 26px;
+
+  @media (max-width: $tablet-width-only) {
+    margin-top: 20px;
   }
 }
 
