@@ -1342,7 +1342,7 @@ a {
   @media (max-width: 767px) {
     .contacts {
       padding-top: 45px;
-      padding-bottom: 50px; } }
+      padding-bottom: 30px; } }
 
 .contacts h2 {
   font-size: 30px;
@@ -1393,7 +1393,7 @@ a {
   @media (max-width: 1023px) {
     .contacts iframe {
       width: 698px;
-      min-height: 250px; } }
+      min-height: 545px; } }
   @media (max-width: 767px) {
     .contacts iframe {
       width: 100%;
@@ -1412,6 +1412,9 @@ a {
   max-width: 564px;
   margin: 0 auto;
   padding: 33px 16px 0 0; }
+  @media (max-width: 1023px) {
+    .contacts__list {
+      padding: 17px 14px 0 3px; } }
   @media (max-width: 767px) {
     .contacts__list {
       -webkit-box-pack: center;
