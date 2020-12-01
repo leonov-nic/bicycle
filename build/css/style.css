@@ -1042,7 +1042,7 @@ a {
   max-width: 1176px;
   margin: 0 auto;
   padding: 0; }
-  @media (max-width: 1150px) {
+  @media (max-width: 1180px) {
     .types__list {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
@@ -1060,19 +1060,23 @@ a {
   position: relative;
   z-index: 10;
   max-width: 342px;
+  width: 29.2%;
   margin: 0 25px 25px;
   padding: 0; }
-  .types__item:nth-child(3n + 3) {
-    margin-top: -10px; }
-    @media (max-width: 1023px) {
-      .types__item:nth-child(3n + 3) {
-        margin-top: auto; } }
+  @media (max-width: 1180px) {
+    .types__item {
+      max-width: 26%; } }
   @media (max-width: 1023px) {
     .types__item {
       max-width: 270px; } }
   @media (max-width: 767px) {
     .types__item {
       margin-bottom: 20px; } }
+  .types__item:nth-child(3n + 3) {
+    margin-top: -10px; }
+    @media (max-width: 1023px) {
+      .types__item:nth-child(3n + 3) {
+        margin-top: auto; } }
   .types__item::before {
     content: "";
     position: absolute;
@@ -1153,8 +1157,17 @@ a {
         right: -10px; } }
 
 .types__img {
-  width: 342px;
+  width: 100%;
   height: 510px; }
+  @media (max-width: 1180px) {
+    .types__img {
+      height: 460px; } }
+  @media (max-width: 1140px) {
+    .types__img {
+      height: 425px; } }
+  @media (max-width: 1100px) {
+    .types__img {
+      height: 405px; } }
   @media (max-width: 1023px) {
     .types__img {
       width: 270px;
@@ -1165,6 +1178,7 @@ a {
   background-image: url("../img/children-1-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: 100% auto;
   border-radius: 10px; }
 
 .types__item--mountains .types__img {
@@ -1174,6 +1188,15 @@ a {
   background-position: center top;
   background-size: 100% auto;
   border-radius: 10px; }
+  @media (max-width: 1180px) {
+    .types__item--mountains .types__img {
+      height: 516px; } }
+  @media (max-width: 1140px) {
+    .types__item--mountains .types__img {
+      height: 481px; } }
+  @media (max-width: 1100px) {
+    .types__item--mountains .types__img {
+      height: 461px; } }
 
 .types__item--road .types__img {
   background-image: url("../img/road-1-desktop@1x.png");
@@ -1443,8 +1466,8 @@ a {
 
 .contacts__item svg {
   position: absolute;
-  top: 6px;
-  left: 0; }
+  top: 5px;
+  left: 2px; }
   @media (max-width: 767px) {
     .contacts__item svg {
       top: 2px;
@@ -1452,7 +1475,14 @@ a {
   @media (max-width: 767px) {
     .contacts__item svg.contacts__letter {
       top: 8px;
-      left: 22px; } }
+      left: 20px; } }
+  @media (max-width: 1023px) {
+    .contacts__item svg.contacts__phone {
+      top: 1px;
+      left: 4px; } }
+  @media (max-width: 767px) {
+    .contacts__item svg.contacts__phone {
+      left: 2px; } }
 
 .contacts__letter {
   color: #0ad9c6;

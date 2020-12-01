@@ -127,19 +127,31 @@
 
 .contacts__item svg {
   position: absolute;
-  top: 6px;
-  left: 0;
+  top: 5px;
+  left: 2px;
 
   @media (max-width: $mobile-width-only) {
     top: 2px;
     left: 5px;
   }
 
-
   @media (max-width: $mobile-width-only) {
     &.contacts__letter {
       top: 8px;
-      left: 22px;
+      left: 20px;
+    }
+  }
+
+  @media (max-width: $tablet-width-only) {
+    &.contacts__phone {
+      top: 1px;
+      left: 4px;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    &.contacts__phone {
+      left: 2px;
     }
   }
 }
