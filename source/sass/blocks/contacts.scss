@@ -122,6 +122,7 @@
 
   @media (max-width: $mobile-width-only) {
     padding-bottom: 15px;
+    padding-left: 38px;
   }
 }
 
@@ -130,16 +131,22 @@
   top: 6px;
   left: 0;
 
-  @media (max-width: $mobile-width-only) {
-    top: 2px;
-    left: 5px;
+  &.contacts__phone {
+    top: 4px;
+    left: 2px;
   }
 
+  @media (max-width: $mobile-width-only) {
+    &.contacts__phone {
+      top: 2px;
+      left: 0;
+    }
+  }
 
   @media (max-width: $mobile-width-only) {
     &.contacts__letter {
       top: 8px;
-      left: 22px;
+      left: 19px;
     }
   }
 }

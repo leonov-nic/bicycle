@@ -1042,7 +1042,7 @@ a {
   max-width: 1176px;
   margin: 0 auto;
   padding: 0; }
-  @media (max-width: 1150px) {
+  @media (max-width: 1190px) {
     .types__list {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
@@ -1155,6 +1155,10 @@ a {
 .types__img {
   width: 342px;
   height: 510px; }
+  @media (max-width: 1190px) {
+    .types__img {
+      width: 290px;
+      height: 427px; } }
   @media (max-width: 1023px) {
     .types__img {
       width: 270px;
@@ -1165,6 +1169,7 @@ a {
   background-image: url("../img/children-1-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: 100% auto;
   border-radius: 10px; }
 
 .types__item--mountains .types__img {
@@ -1174,6 +1179,9 @@ a {
   background-position: center top;
   background-size: 100% auto;
   border-radius: 10px; }
+  @media (max-width: 1190px) {
+    .types__item--mountains .types__img {
+      height: 480px; } }
 
 .types__item--road .types__img {
   background-image: url("../img/road-1-desktop@1x.png");
@@ -1439,20 +1447,24 @@ a {
     stroke: #48494d; }
   @media (max-width: 767px) {
     .contacts__item {
-      padding-bottom: 15px; } }
+      padding-bottom: 15px;
+      padding-left: 38px; } }
 
 .contacts__item svg {
   position: absolute;
   top: 6px;
   left: 0; }
+  .contacts__item svg.contacts__phone {
+    top: 4px;
+    left: 2px; }
   @media (max-width: 767px) {
-    .contacts__item svg {
+    .contacts__item svg.contacts__phone {
       top: 2px;
-      left: 5px; } }
+      left: 0; } }
   @media (max-width: 767px) {
     .contacts__item svg.contacts__letter {
       top: 8px;
-      left: 22px; } }
+      left: 19px; } }
 
 .contacts__letter {
   color: #0ad9c6;

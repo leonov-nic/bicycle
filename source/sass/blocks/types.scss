@@ -47,7 +47,7 @@
   // margin: 0 -25px;
   padding: 0;
 
-  @media (max-width: 1150px) {
+  @media (max-width: 1190px) {
     justify-content: center;
   }
 
@@ -196,6 +196,11 @@
   width: 342px;
   height: 510px;
 
+  @media (max-width: 1190px) {
+    width: 290px;
+    height: 427px;
+  }
+
   @media (max-width: $tablet-width-only) {
     width: 270px;
     height: 300px;
@@ -207,11 +212,16 @@
   background-image: url("../img/children-1-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: 100% auto;
   border-radius: 10px;
 }
 
 .types__item--mountains .types__img {
   height: 566px;
+
+  @media (max-width: 1190px) {
+    height: 480px;
+  }
 
   background-image: url("../img/mountains-1-desktop@1x.png");
   background-repeat: no-repeat;
