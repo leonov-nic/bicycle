@@ -46,7 +46,7 @@
   // margin: 0 -25px;
   padding: 0;
 
-  @media (max-width: 1180px) {
+  @media (max-width: 1190px) {
     justify-content: center;
   }
 
@@ -60,18 +60,13 @@
 .types__item {
   position: relative;
   z-index: 10;
-
   max-width: 342px;
-  width: 29.2%;
   margin: 0 25px 25px;
   padding: 0;
 
-  @media (max-width: 1180px) {
-    max-width: 26%;
-  }
-
   @media (max-width: $tablet-width-only) {
     max-width: 270px;
+    margin-bottom: 27px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -190,27 +185,19 @@
       }
 
       @media (max-width: $mobile-width-only) {
-        right: -10px;
+        right: -14px;
       }
     }
   }
 }
 
 .types__img {
-  // width: 342px;
-  width: 100%;
+  width: 342px;
   height: 510px;
 
-  @media (max-width: 1180px) {
-    height: 460px;
-  }
-
-  @media (max-width: 1140px) {
-    height: 425px;
-  }
-
-  @media (max-width: 1100px) {
-    height: 405px;
+  @media (max-width: 1190px) {
+    width: 290px;
+    height: 427px;
   }
 
   @media (max-width: $tablet-width-only) {
@@ -231,23 +218,15 @@
 .types__item--mountains .types__img {
   height: 566px;
 
+  @media (max-width: 1190px) {
+    height: 480px;
+  }
+
   background-image: url("../img/mountains-1-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100% auto;
   border-radius: 10px;
-
-  @media (max-width: 1180px) {
-    height: 516px;
-  }
-
-  @media (max-width: 1140px) {
-    height: 481px;
-  }
-
-  @media (max-width: 1100px) {
-    height: 461px;
-  }
 }
 
 .types__item--road .types__img {
@@ -273,7 +252,7 @@
 }
 
 .types__item:nth-child(3n + 3) p {
-  margin-top: 26px;
+  margin-top: 25px;
 
   @media (max-width: $tablet-width-only) {
     margin-top: 20px;
