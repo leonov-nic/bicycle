@@ -3,7 +3,7 @@
 }
 
 .contacts {
-  padding-top: 5px;
+  padding-top: 4px;
   padding-bottom: 5.5%;
 
   @media (max-width: $tablet-width-only) {
@@ -128,17 +128,20 @@
 
 .contacts__item svg {
   position: absolute;
-  top: 6px;
-  left: 0;
+  top: 5px;
+  left: 2px;
 
   &.contacts__phone {
     top: 4px;
     left: 2px;
   }
 
-  @media (max-width: $mobile-width-only) {
+  @media (max-width: $tablet-width-only) {
     &.contacts__phone {
-      top: 2px;
+      left: 4px;
+    }
+
+    &.contacts__letter {
       left: 0;
     }
   }
